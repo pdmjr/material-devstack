@@ -40,7 +40,7 @@ cd devstack
 Criando o arquivo de configuração local
 
 ```markdown
-tee -a local.conf  << EOF
+tee -a local.conf  < EOF
 [[local|localrc]]
 ADMIN_PASSWORD=senha
 DATABASE_PASSWORD=senha
