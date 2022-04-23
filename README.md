@@ -43,11 +43,11 @@ Criando o arquivo de configuração local
 tee -a local.conf  << EOF
 [[local|localrc]]
 ADMIN_PASSWORD=senha
-DATABASE_PASSWORD=$ADMIN_PASSWORD
-RABBIT_PASSWORD=$ADMIN_PASSWORD
-SERVICE_PASSWORD=$ADMIN_PASSWORD
+DATABASE_PASSWORD=senha
+RABBIT_PASSWORD=senha
+SERVICE_PASSWORD=senha
 HOST_IP=ip
-SERVICE_HOST=$HOST_IP
+SERVICE_HOST=ip
 EOF
 sed -i "s/senha/secret/g; s/ip/`hostname -I | cut -d ' ' -f 2`/g" local.conf
 ```
